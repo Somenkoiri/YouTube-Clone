@@ -1,0 +1,1149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.left {
+    width: 20%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 7.7rem;
+    height: 45px;
+    object-fit: cover;
+    position: relative;
+    left: 2rem;
+
+}
+
+.left i {
+    font-size: 1.6rem;
+    position: relative;
+    left: 1.2rem;
+    font-weight: 900;
+}
+
+
+.center {
+    width: 50%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.center input {
+    width: 35rem;
+    height: 45px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+
+}
+
+.search {
+    width: 5rem;
+    height: 45px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -4.3rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+    border-bottom: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+    border-right: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+
+}
+
+.search i {
+
+    font-size: 25px;
+
+}
+
+.micro {
+    width: 6%;
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    left: -3rem;
+
+}
+
+.micro i {
+    font-size: 20px;
+
+}
+
+
+.right {
+    width: 20%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.right i {
+    font-size: 25px;
+}
+
+.user {
+    width: 53px;
+    height: 50px;
+    background-image: url("/images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 3rem;
+    border-radius: 50%;
+}
+
+/* left section is a media qurry use */
+@media screen and (max-width: 1348px) {
+
+    .micro {
+        width: 3rem;
+        height: 40px;
+             
+    }
+
+  }
+  @media screen and (max-width:1167px) {
+
+    .search{
+        background-color: #f0f0f0;
+        width: 6rem;
+    }
+    .micro {
+        width: 4rem;
+        height: 40px;
+             
+    }
+    
+  }
+  @media screen and (max-width:1011px) {
+    .search{
+        background-color: #f0f0f0;
+        width: 7rem;
+    }
+    .micro {
+        width: 4rem;
+        height: 40px;
+             
+    }
+}
+    @media screen and (max-width:897px) {
+        .search{
+            background-color: #f0f0f0;
+            width: 8rem;
+        }
+        .micro {
+            width: 4rem;
+            height: 40px;
+                 
+        }
+  }
+
+  @media screen and (max-width:785px) {
+    .search{
+       
+        width: 9rem;
+    }
+    .micro {
+        width: 6rem;
+        height: 40px;
+             
+    }
+}
+@media screen and (max-width:1247px) {
+
+    .right{
+        position: relative;
+        left: -1rem;
+    }
+    .user{
+        position: relative;
+        left: 0rem;
+    }
+    
+}
+@media screen and (max-width:721px) {
+    .search{
+        height: 36px;
+        position: relative;
+        left: 3px;
+        background-color: white;
+        width: 1.5rem;
+        
+    }.search i{
+        font-size: 20px;
+    }
+    .micro {
+        display: none;
+             
+    }
+    .center{
+        display: flex;
+       position: relative;
+       left: 1.6rem;
+        
+    }
+    .center input{
+        width: 100%;
+        height: 36px;
+        position: relative;
+        left: 1.6rem;
+
+
+    }
+
+    .user{
+        
+        position: relative;
+        left: -1rem;
+        
+    }
+    .right i{
+        font-size: 20px;
+    }
+    .right{
+        width: 30%;
+        position: relative;
+        left: 1.6rem;
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width:467px) {
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+        left: 4rem;
+        
+    }
+    .header{
+        width: 100%;
+    }
+    .right i{
+        display: none;
+    }
+    .center{
+        position: relative;
+        left: 3.3rem;
+    }
+
+    
+}
+@media screen and (max-width:300px) {
+
+    .center input{
+        display: none;
+    }
+    .left{
+        background-image: url("/images/logo1yt.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        left: 2.8rem;
+        z-index: 4;
+        width: 6rem;
+        height: 30px;
+    }
+    .left i{
+        position: relative;
+        left: -1.6rem;
+    }
+    
+    .left img{
+        display: none;
+    }
+    .center i{
+        position: relative;
+        left: -12px;
+        z-index: 1;
+    }
+    .right{
+        position: relative;
+        left: 7px;
+
+    }
+    
+    
+    
+}
+/* @media screen and (max-width:253px) {
+    
+    
+    
+    .right{
+        position: relative;
+        left: 2rem;
+    }
+    .search{
+        position: relative;
+        left: 1rem;
+    }
+
+} */
+
+/* block of box is a code */
+.blockbox {
+    width: 100%;
+
+    display: flex;
+}
+
+/* header is a complied  */
+
+.liftside {
+    width: 15%;
+    height: 100vh;
+    overflow-y: scroll;
+   
+
+
+}
+
+/* the section of a element for left side  */
+/* the frist element is a home */
+
+.section1 {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.section1 h3 {
+
+    position: relative;
+    left: 28px;
+    font-size: 16px;
+    font-family: "Roboto", "Arial", sans-serif;
+
+}
+
+.section1 i {
+    font-size: 22px;
+
+}
+
+.section1 span {
+    transition: border-radius, background-color, width, height, 1s;
+}
+
+.section1 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+
+}
+
+.home {
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: -5px;
+
+}
+
+.short {
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: -5px;
+
+}
+
+.sub {
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: -5px;
+
+}
+
+/* section 1 scomplied work */
+/* section 2 working */
+
+.section2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+    gap: 14px;
+}
+
+.section2 span {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 6px;
+    align-items: center;
+    transition: border-radius, background-color, width, height, 0.5s;
+}
+
+.section2 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    transform: translateX(15px);
+}
+
+.section2 i {
+    position: relative;
+    left: 15px;
+    font-size: 22px;
+
+}
+
+.section2 h3 {
+    position: relative;
+    left: 1.4rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+
+
+}
+
+/* section 2 is a complied work */
+/* section 3 working */
+
+.section3 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1rem;
+    gap: 14px;
+
+}
+
+.section3 span {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 6px;
+    align-items: center;
+    transition: border-radius, background-color, width, height, 0.5s;
+}
+
+.section3 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    transform: translateX(15px);
+}
+
+.section3 i {
+    position: relative;
+    left: 15px;
+    font-size: 22px;
+
+}
+
+.section3 h3 {
+    position: relative;
+    left: 1.4rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+
+
+}
+
+/* section 3 scomplied work */
+/* section 4 working */
+
+
+
+.section4 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1rem;
+    gap: 14px;
+
+
+
+}
+
+.section4 span {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 6px;
+    align-items: center;
+    transition: border-radius, background-color, width, height, 0.5s;
+}
+
+.section4 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    transform: translateX(15px);
+}
+
+.section4 i {
+    position: relative;
+    left: 15px;
+    font-size: 22px;
+
+}
+
+.section4 h3 {
+    position: relative;
+    left: 1.4rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+
+
+}
+
+/* section 4 scomplied work */
+/* section 5 working */
+
+
+
+.section5 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 14px;
+
+
+}
+
+.section5 span {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 6px;
+    align-items: center;
+    transition: border-radius, background-color, width, height, 0.5s;
+}
+
+.section5 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    transform: translateX(15px);
+}
+
+.section5 i {
+    position: relative;
+    left: 15px;
+    font-size: 22px;
+    color: red;
+
+}
+
+.section5 h3 {
+    position: relative;
+    left: 1.4rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+
+
+}
+
+/* section 5 scomplied work */
+/* section 6 working */
+
+
+
+.section6 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 14px;
+
+
+
+}
+
+.section6 span {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 6px;
+    align-items: center;
+    transition: border-radius, background-color, width, height, 0.5s;
+}
+
+.section6 span:hover {
+    background-color: silver;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    transform: translateX(15px);
+}
+
+.section6 i {
+    position: relative;
+    left: 15px;
+    font-size: 22px;
+
+
+}
+
+.section6 h3 {
+    position: relative;
+    left: 1.4rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+
+
+}
+
+/* section 6scomplied work */
+/* section 7 working */
+
+.section7 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 14px;
+
+    top: -1.9rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.section7 h3 {
+    position: relative;
+    left: 10px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+    color: rgb(27, 27, 27);
+
+}
+/* left side navber work code */
+/* use media qurry as codes */
+
+@media screen and (max-width:1497px) {
+
+
+    .liftside{
+        width: 22%;
+    }
+    .section3 {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1.6rem;
+        gap: 14px;
+    }
+    .section4{
+        position: relative;
+        top: 2rem;
+
+    }
+    .section5{
+        position: relative;
+        top: 4.2rem;
+
+    }
+    .section6{
+        position: relative;
+        top: 5rem;
+    }
+    .section7{
+        position: relative;
+        top: 4rem;
+    }
+    
+    }
+    @media screen and (max-width:1175px) {
+
+        .liftside {
+            width: 25%;
+            height: 100vh;
+            
+        }
+
+        
+    }
+    @media screen and (max-width:1006px) {
+
+        .liftside {
+            width: 25%;
+            height: 100vh;
+            
+            
+        }
+        .section7 h3{
+             font-size: 11px;
+        }
+
+        
+    }
+    @media screen and (max-width:978px) {
+
+        .liftside {
+            width: 30%;
+            height: 100vh;
+    
+            
+        }
+
+        
+    }
+    @media screen and (max-width:848px) {
+
+        .liftside {
+            width: 35%;
+            height: 100vh;
+    
+            
+        }
+
+        
+    }
+    @media screen and (max-width:762px) {
+
+        .liftside {
+            width: 4
+            
+        }
+
+        
+    }
+    @media screen and (max-width:634px) {
+
+        .liftside {
+            width: 5
+            
+        }
+
+        
+    }
+    @media screen and (max-width:552px) {
+
+        .liftside {
+            width: 6
+            
+        }
+    }
+
+        
+ @media screen and (max-width:497px) {
+
+        .liftside {
+            width: 75%;
+            height: 100vh;
+            
+            
+        }
+
+        
+    }
+            
+ @media screen and (max-width:409px) {
+
+    .liftside {
+        width: 75%;
+        height: 100vh;
+       
+        
+    }
+
+    .section1 span i {
+        font-size: 10px ;
+     }
+     .section1 span h3{
+         font-size: 12px ;
+     }.section2 span i {
+        font-size: 10px ;
+     }
+     .section2 span h3{
+         font-size: 12px ;
+     }.section3 span i {
+        font-size: 10px ;
+     }
+     .section3 span h3{
+         font-size: 12px ;
+     }
+
+
+    .section4 span i {
+       font-size: 10px ;
+    }
+    .section4 span h3{
+        font-size: 12px ;
+    }
+    .section5 span i {
+        font-size: 10px ;
+     }
+     .section5 span h3{
+         font-size: 12px ;
+     }
+     .section6 span i {
+        font-size: 10px ;
+     }
+     .section6 span h3{
+         font-size: 12px ;
+     }
+     .section7 span i {
+        font-size: 10px ;
+     }
+     .section7 span h3{
+         font-size: 12px ;
+     }
+    
+}
+
+@media screen and (max-width:338px) {
+
+    .liftside {
+        width: 100%;
+        height: 100vh;
+        
+        
+    }
+
+    .section1 span i {
+        font-size: 18px ;
+     }
+     .section1 span h3{
+         
+         
+     }.section2 span i {
+        font-size: 18px ;
+     }
+     .section2 span h3{
+         font-size: 12px ;
+         
+     }.section3 span i {
+        font-size: 18px ;
+     }
+     .section3 span h3{
+         font-size: 12px ;
+         
+     }
+
+
+    .section4 span i {
+        font-size: 18px ;
+    }
+    .section4 span h3{
+        font-size: 12px;
+    }
+    .section5 span i {
+        font-size: 18px ;
+     }
+     .section5 span h3{
+         font-size: 12px;
+     }
+     .section6 span i {
+        font-size: 18px ;
+     }
+     .section6 span h3{
+         font-size: 12px;
+     }
+     .section7 span i {
+        font-size: 18px ;
+     }
+     .section7 span h3{
+         font-size: 12px;
+     }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+/* the right side work */
+.rightside {
+    width: 85%;
+    height: 100vh;
+    box-sizing: border-box;
+overflow-y: scroll;
+
+
+}
+
+/* the right side is a coding work  */
+/* section is a side navbar work */
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+    top: 15px;
+    overflow-x:scroll ;
+    
+    
+    
+}.navbar::-webkit-scrollbar{
+    height: 0;
+}
+
+.navbar button {
+    
+    font-size: 20px;
+    border-radius: 4px;
+    font-family: Georgia, serif;
+    text-align: center;
+    border: 1px solid black;
+    transition: cursor, background-color, border-radius, 0.5s;
+
+}
+
+.navbar button:hover {
+    cursor: pointer;
+    background-color: silver;
+    border-radius: 0px;
+    transform: translateY(-15px);
+
+}
+
+/* media qurry is section right side navber code */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* all box part working */
+.boxworld {
+
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    flex-wrap: wrap;
+    top: 2rem;
+    gap: 10px;
+
+
+
+
+}
+
+.box1 {
+    width: 31%;
+    height: 300px;
+    margin-left: 15px;
+   
+
+}
+
+.box1 h3 {
+    text-align: center;
+}
+
+.box1 p {
+    text-align: center;
+}
+
+.box1 span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box1 span i {
+    font-size: 30px;
+}
+
+.part1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+
+}
+
+.part1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: box-shadow, linear 0.5s;
+}
+
+.part1 img:hover {
+
+    box-shadow: 10px 5px 5px black;
+
+}
+
+/* all box media qurry code */
+
+@media screen and (max-width:1200px) {
+    .box1{
+        
+        height: 310px;
+        
+    }
+    .box1 p{
+        font-size: 12px;
+    }
+    .box1 span{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen  and (max-width:927px){
+
+
+    .boxworld{
+
+        gap: 6px; 
+
+    }
+
+}
+@media screen and (max-width:813px) {
+
+    .box1{
+        width: 45%;
+        margin-left: 1.6rem;
+    }
+    .box1 p{
+        font-size: 12px;
+    }
+    .box1 span{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    
+    
+}
+@media screen  and (max-width:570px){
+
+    .box1{
+        width: 85%;
+        margin-left: 2.7rem;
+    }
+    
+    
+}
+@media screen and (max-width:364px) {
+    
+    .box1{
+        width: 90%;
+        height: 275px;
+        margin-left: 10px;
+    }
+    .box1 span {
+        font-size: 9px;
+        margin-top: -2rem;
+    }
+    .box1 p{
+        font-size: 11px;
+    }
+    .box1 h3{
+        font-size: 10px;
+    }
+    .part1 img{
+        width: 100%;
+        height:150px;
+        object-fit: cover;
+    }
+
+}
