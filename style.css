@@ -931,14 +931,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /* the right side work */
 .rightside {
     width: 85%;
@@ -951,6 +943,38 @@ overflow-y: scroll;
 
 /* the right side is a coding work  */
 /* section is a side navbar work */
+
+.footerbar{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: none;
+   
+    bottom: 0px;
+
+}
+
+.footerbar i{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width:566px) {
+    
+    .footerbar{
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+    .footerbar i{
+        display: block;
+        float: left;
+    }
+}
+
 
 .navbar {
     width: 100%;
