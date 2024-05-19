@@ -969,6 +969,9 @@ overflow-y: scroll;
 
 
     }
+    .liftside{
+        display: none;
+    }
     .footerbar i{
         display: block;
         float: left;
