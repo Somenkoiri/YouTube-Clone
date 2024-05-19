@@ -966,7 +966,7 @@ overflow-y: scroll;
         background-color: white;
         align-items: center;
         justify-content: space-around;
-         position: fixed;
+        
     }
     .footerbar i:hover{
         color: red;
