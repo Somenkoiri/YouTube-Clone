@@ -799,9 +799,11 @@
     @media screen and (max-width:552px) {
 
         .liftside {
-            width: 6
+            display:none;
+            
             
         }
+        
     }
 
         
