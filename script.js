@@ -10,13 +10,13 @@ menu.addEventListener("click",function(){
 
    if(openClose==0){
 
-    leftside.style.display="none"
+    leftside.style.display="block"
     rightside.style.width="100%"
    
     openClose = 1;
 
    }else{
-    leftside.style.display="block"
+    leftside.style.display="none"
    
     openClose=0;
    }
